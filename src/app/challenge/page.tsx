@@ -33,9 +33,9 @@ export default function Challenge() {
                 challenges.map((challenge, index) => {
                     if (challenge.id == Number(search)) {
                         return (
-                            <div className="flex flex-col justify-evenly md:gap-16 md:flex-row">
+                            <div className="flex flex-col justify-evenly md:gap-16 md:flex-row" key={index}>
 
-                                <div key={index} className="md:w-1/2 resize-x">
+                                <div className="md:w-1/2 resize-x">
                                     <h1 className="text-center font-bold text-3xl py-10">{challenge.title}</h1>
                                     <p className="text-center">{challenge.difficulty}</p>
                                     <p className="text-center">{challenge.description}</p>
