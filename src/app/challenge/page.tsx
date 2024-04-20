@@ -1,9 +1,17 @@
 "use client"
 import { useSearchParams } from "next/navigation";
 import { challenges } from "@/app/challenges";
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 
 export default function Challenge() {
+    return (
+        <Suspense fallback={<div>Loading...</div>}>
+            <ChallengeContent />
+        </Suspense>
+    );
+}
+
+function ChallengeContent() {
     const searchParams = useSearchParams();
     const search = searchParams.get("search");
 
