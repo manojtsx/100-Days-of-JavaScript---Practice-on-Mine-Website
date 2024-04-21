@@ -2,6 +2,7 @@
 import { useSearchParams } from "next/navigation";
 import { challenges } from "@/app/challenges";
 import { useEffect, useState, Suspense } from "react";
+import Link from "next/link";
 
 export default function Challenge() {
     const searchParams = useSearchParams();
@@ -58,7 +59,7 @@ export default function Challenge() {
                     })
                 }
                 {/* Create a coding playground here for writing JavaScript code*/}
-
+                <Link href="/">Go To Home</Link>
             </main>
         </Suspense>
     );
