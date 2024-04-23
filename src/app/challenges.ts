@@ -544,5 +544,52 @@ export const challenges:Challenge[] = [
         }
         fibonacci(5)`,
         difficulty: 'medium'
+    },
+    {
+        id : 27,
+        title : "Repeat the String",
+        description : ` Q. Write a function called repeatString that takes two parameters.
+        str : A string that needs to be repeated.
+        num : An integer representing the number of tiems the string should be repeated.
+        The function should repeat the string str the specified number of tiems num adn return the resulting string.
+        ===========================================================
+        Example: 
+        console.log(repeatString("abc",5)) //OUTPUT: "abcabcabcabcabc";
+        ===========================================================
+        Constraints: 
+        1. The input string str will contain only alphanumeric characters and punctuation marks.
+        2. The input number num will be a non negative integer.
+        3. The output string length should not exceed the length of str multiplied by num.`,
+        placeholder : `function repeatString(str, num){
+            // Your code here
+        }
+        repeatString("abc",5)`,
+        difficulty: 'medium'
+    },
+    {
+        id : 28,
+        title : 'Day 28 : Truncate the String',
+        description : `  Q.  Coding Challenge ; Truncate a String
+        ===========================================================
+        Write a function called truncateString that takes two parameters:
+        str : A string that needs to be truncated.
+        maxLength : An integer representing the maximum length of the string allowed.
+        The function should truncate the input string str if its length exceeds the specified maxLength. If truncation occurs, the function should add '...' to the end of the trucated string.
+        ===========================================================
+        EXAMPLE:
+        console.log(truncateString("A-tisket a-tasket A green and yellow basket",8));
+        OUTPUT:
+        "A-tisket..."
+        ===========================================================
+        Constraints:
+        1.The input string str will contain only alphanumeric characters and punctuation marks.
+        2. The maximum length maxLength will be a positive integer.
+        3. The output string length should exceed maxLength + 3 characters due to the addition of '...'.
+        4. If space lies at the end after truncation, then it must have to remove that space.`,
+        placeholder : `function truncateString(str, maxLength){
+            // Your code here
+        }
+        truncateString("A-tisket a-tasket A green and yellow basket",8)`,
+        difficulty: 'medium'
     }
 ]
