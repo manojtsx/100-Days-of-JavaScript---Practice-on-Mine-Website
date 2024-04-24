@@ -591,5 +591,31 @@ export const challenges:Challenge[] = [
         }
         truncateString("A-tisket a-tasket A green and yellow basket",8)`,
         difficulty: 'medium'
+    },
+    {
+        id : 29,
+        title : "Day 29 : Number Range Generator",
+        description : ` Coding Challenge : Number Range Generator
+        ===========================================================
+        Write a function called numberRanage that generate an array containing consecutive numbers from a to b (inclusive).
+        ===========================================================
+        INPUT:
+        a: An integer representing the starting number of the range.
+        b: An integer representing the ending number of the range.
+        arr: An optional parameter representing the array to store the numbers in the range. It defaults to an empty array.
+        ===========================================================
+        OUTPUT:
+        An array containing consecutive numbers from a to b (inclusive).
+        ===========================================================
+        CONSTRAINTS:
+        a and b will be integers else print "Parameters must be integer."
+        a will be less than or equal to b else print "First parameter should be less than or equal to second parameter."
+        ===========================================================
+        console.log(numberRange(0,5)) // [0,1,2,3,4,5];`,
+        placeholder : `function numberRange(a, b) {
+            // Your code here
+          }
+            numberRange(0,5)`,
+        difficulty: 'medium'
     }
 ]
