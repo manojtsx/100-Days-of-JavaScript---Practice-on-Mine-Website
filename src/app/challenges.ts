@@ -547,7 +547,7 @@ export const challenges:Challenge[] = [
     },
     {
         id : 27,
-        title : "Repeat the String",
+        title : "Day 27 : Repeat the String",
         description : ` Q. Write a function called repeatString that takes two parameters.
         str : A string that needs to be repeated.
         num : An integer representing the number of tiems the string should be repeated.
