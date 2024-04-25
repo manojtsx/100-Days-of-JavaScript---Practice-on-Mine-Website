@@ -617,5 +617,30 @@ export const challenges:Challenge[] = [
           }
             numberRange(0,5)`,
         difficulty: 'medium'
+    },
+    {
+        id : 30,
+        title : "Day 30 : Number Range Generator with Recursion",
+        description: `Coding Challenge : Number Range Generator Recursively
+        ===========================================================
+        Write a function called numberRange that generate an array containing consecutive numbers from a to b (inclusive) with recursion.
+        ===========================================================
+        INPUT:
+        a: An integer representing the starting number of the range.
+        b: An integer representing the ending number of the range.
+        arr: An optional parameter representing the array to store the numbers in the range. It defaults to an empty array.
+        ===========================================================
+        OUTPUT:
+        An array containing consecutive numbers from a to b (inclusive).
+        ===========================================================
+        CONSTRAINTS:
+        a and b will be integers
+        a will be less than or equal to b.
+        console.log(numberRangeRecursion(0,5)) // [0,1,2,3,4,5];`,
+        placeholder : `fuction numberRange(a, b, arr = []) {
+            // Your code here
+        }
+        numberRange(0,5)`,
+        difficulty: 'hard'
     }
 ]
