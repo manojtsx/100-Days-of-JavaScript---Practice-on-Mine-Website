@@ -747,5 +747,32 @@ export const challenges: Challenge[] = [
     }
     removeDuplicates([1,2,3,3,4,4,5]);`,
     difficulty : 'medium'
+  },
+  {
+    id : 35,
+    title : 'Day 35 : Checks Object is Empty or Not',
+    description : ` Challenge : Check Object Emptiness
+    ===========================================================
+    Write a function isEmptyObject that takes an object as input and determines whether it is empty or not. An empty object is defined as an object with no own properties.
+    ===========================================================
+    Your task is to implement the isEmptyObject using JavaScritp and return a message indicating whether the object is empty or not.
+    ===========================================================
+    CONSTRAINTS:
+    1. The input object may have any number of properties, including zero.
+    2. The function should return a message indicating whether the object is empty or not.
+    3. You should use the provided isEmptyObject function signature without any additional parameters.
+    ===========================================================
+    console.log(isEmptyObject({name : "Manoj"})) OUTPUT: it's not empty
+    console.log(isEmptyObject({})) OUTPUT: it's empty
+    console.log(isEmptyObject({keyWithNull : null})) OUTPUT: it's empty
+    console.log(isEmptyObject({keyWithUndefined : undefined})) OUTPUT: it's empty`,
+    placeholder : `function isEmptyObject(obj){
+        // Your code here
+    }
+    isEmptyObject({name : "Manoj"});
+    isEmptyObject({});
+    isEmptyObject({keyWithNull : null});
+    isEmptyObject({keyWithUndefined : undefined});`,
+    difficulty : 'medium'
   }
 ];
