@@ -704,9 +704,9 @@ export const challenges: Challenge[] = [
     difficulty: "easy",
   },
   {
-    id : 33,
-    title : 'Day 33 : Random Hex Color Generator',
-    description : `Coding Challenge : Random Hex Color Generator
+    id: 33,
+    title: "Day 33 : Random Hex Color Generator",
+    description: `Coding Challenge : Random Hex Color Generator
     ===========================================================
     Write a function randomHexColor that generates a random hexadecimal color code each time it is called. The function should return a string representing the random color code in the format '#RRGGBB', where RR, GG, and BB are two digit hexadecimal numbers representing the red, green, and blue components of the color respectively.
     ===========================================================
@@ -719,15 +719,15 @@ export const challenges: Challenge[] = [
     ===========================================================
     HINT: Conver the random number into hexadecimal string reprsentation.
     console.log(randomHexColor());`,
-    placeholder : `function randomHexColor(){
+    placeholder: `function randomHexColor(){
         // Your code here
     }
     randomHexColor();`,
-    difficulty : 'medium'
+    difficulty: "medium",
   },
   {
-    id : 34,
-    title : 'Day 34 : Remove Duplicates from an Array',
+    id: 34,
+    title: "Day 34 : Remove Duplicates from an Array",
     description: `Challenge : Remove Duplicates from an Array
     ===========================================================
     Write a function removeDuplicates that takes an array of elements as input and returns a new array
@@ -746,12 +746,12 @@ export const challenges: Challenge[] = [
         // Your code here
     }
     removeDuplicates([1,2,3,3,4,4,5]);`,
-    difficulty : 'medium'
+    difficulty: "medium",
   },
   {
-    id : 35,
-    title : 'Day 35 : Checks Object is Empty or Not',
-    description : ` Challenge : Check Object Emptiness
+    id: 35,
+    title: "Day 35 : Checks Object is Empty or Not",
+    description: ` Challenge : Check Object Emptiness
     ===========================================================
     Write a function isEmptyObject that takes an object as input and determines whether it is empty or not. An empty object is defined as an object with no own properties.
     ===========================================================
@@ -766,40 +766,40 @@ export const challenges: Challenge[] = [
     console.log(isEmptyObject({})) OUTPUT: it's empty
     console.log(isEmptyObject({keyWithNull : null})) OUTPUT: it's empty
     console.log(isEmptyObject({keyWithUndefined : undefined})) OUTPUT: it's empty`,
-    placeholder : `function isEmptyObject(obj){
+    placeholder: `function isEmptyObject(obj){
         // Your code here
     }
     isEmptyObject({name : "Manoj"});
     isEmptyObject({});
     isEmptyObject({keyWithNull : null});
     isEmptyObject({keyWithUndefined : undefined});`,
-    difficulty : 'medium'
+    difficulty: "medium",
   },
   {
-    id : 36,
-    title : 'Day 36 : Array and Object Conversion',
-    description : `Challenge: Convert Object to Array and Vice Versa
-
+    id: 36,
+    title: "Day 36 : Array and Object Conversion",
+    description: `Challenge: Convert Object to Array and Vice Versa
+    ===========================================================
     Your task is to implement two functions:
-    
+    ===========================================================
     Convert Object to Array : Write a function objectToArray that takes an object as an input and returns an array of key-value pairs, where each element in the array is an array with two elements: the key and the corresponding value from the object.
-    
+    ===========================================================
     Covert Array to Object: Write a function arrayToObject that takes an array of key-value pairs (as returned by the objectToArray function and returns a new object with the keys and values from the array.)
-    
+    ===========================================================
     Ensure that the conversion functions work correctly for objects with various data types as values, such as strings, numbers, and objects.
-    
+    ===========================================================
     CONSTRAINTS:
     1. The input object may contain properties of any data type.
     2. The input array must contain arrays with exactly two elements(key-value pairs).
     3. The output object should hae properties in the same order as the original object.
     4. You should use the provided function signatures (objectToArray and arrayToObject) without any additional parameters.
-    
+    ===========================================================
     const obg = {
         name : "Kodyfier Shrestha",
         age : 23,
         city : "Damauli"
     }`,
-    placeholder : `function objectToArray(obj){
+    placeholder: `function objectToArray(obj){
         // Your code here
     }
     function arrayToObject(arr){
@@ -813,6 +813,22 @@ export const challenges: Challenge[] = [
     const arr = objectToArray(obj);
     console.log(arr);
     console.log(arrayToObject(arr));`,
-    difficulty : 'easy'
-  }
+    difficulty: "easy",
+  },
+  {
+    id: 37,
+    title: "Day 37 : Find Simple Interest",
+    description: `Challenge : Simple Interest Calculator
+    ===========================================================
+    Write a function calculateSimpleInterest that calculates the simple interest given the principal amount, rate of interest per annum, and time in years.
+    ===========================================================
+    console.log(calculateSimpleInterest(1000,5,3))  OUTPUT: 150`,
+    placeholder: `
+    function calculateSimpleInterest(principal, rate, time){
+        // Your code here
+    }
+    calculateSimpleInterest(1000,5,3)
+    `,
+    difficulty: "easy",
+  },
 ];
