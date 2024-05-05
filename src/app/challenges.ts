@@ -849,5 +849,28 @@ export const challenges: Challenge[] = [
     calculateDaysBetweenDates("2024-01-01","2024-01-30")  
       `,
     difficulty : 'medium'
+  },{
+    id : 39,
+    title : 'Day 39 : Calculate Age of a Person',
+    description : `Challenge : Calculate Age from birthDate
+    ===========================================================
+    Create a function calculateAge that takes birthDate as input and returns the current age of the person. The birthDate will be provided in the format YYYY-MM-DD.
+    ===========================================================
+    Requirements:
+    1. The function must handle leap years and varying numbers of days in each month accurately.
+    2. Consider the timezone difference and ensure the age is calcualated based on the current date in your local time zone.
+    3. The output should be the age in whole years.
+    ===========================================================
+    console.log(calculateAge("1990-05-15")); //OUTPUT: 33
+    ===========================================================
+    //TODOS:
+    1. Checks if the current month is less than the birth month of it's the same month but today's date is before the birth date. If either condition is true, it subtracts one from the age because the birthday has not yet occured this year. `,
+    placeholder : `
+    function calculateAge(birthDate){
+      // Your code here
+    }
+    console.log(calculateAge("1990-05-15")) //OUTPUT : 33
+    `,
+    difficulty : 'hard'
   }
 ];
