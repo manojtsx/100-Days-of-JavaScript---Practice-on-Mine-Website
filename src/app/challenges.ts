@@ -872,5 +872,24 @@ export const challenges: Challenge[] = [
     console.log(calculateAge("1990-05-15")) //OUTPUT : 33
     `,
     difficulty : 'hard'
+  },
+  {
+    id : 40,
+    title : "Create Bar Chart",
+    description : `Challenge : Simple Bar Chart Using Array Data
+    ===========================================================
+    Write a function generateBarChart that takes an array of  numbers and generates a text-based bar chart.
+    ===========================================================
+    console.log(generateBarChart([5,3,9,2]));
+    ===========================================================
+    1 : *****
+    2 : ***
+    3 : *********
+    4 : **`,
+    placeholder : `function generateBarChart(arr){
+      //You code here
+    }
+    console.log(generateBarChart([5,3,9,2]));`,
+    difficulty : 'hard'
   }
 ];
