@@ -891,5 +891,32 @@ export const challenges: Challenge[] = [
     }
     console.log(generateBarChart([5,3,9,2]));`,
     difficulty : 'hard'
+  },
+  {
+    id : 41,
+    title : 'Simple Currency Converter',
+    description : `Challenge : Simple Currency Converter
+    ===========================================================
+    Write a function convertCurrency to convert from one currency to another using static exchange rates.
+    ===========================================================
+    Requirements:
+    1. Write a function named convertCurrency that takes three parameters: amount, fromCurrency, and toCurrency.
+    2. Use a fixed object to store exchange rates relative to a base currency (e.g: USD)
+    3. The function should return the converted amount in the target currency.
+    4. Handle conversion through USD as a base, meaning if converting from GBP to EUR, first convert GBP to USD, then USD to EUR.
+    ===========================================================
+    console.log(convertCurrency(100, "GBP","EUR"))`,
+    placeholder : `const rates = {
+      USD : 1,
+      EUR : 0.9,
+      GBP : 0.8,
+      INR : 82
+  }
+  function convertCurrency(amount, fromCurrency, toCurrency){
+      // Your code here 
+  }
+  console.log(convertCurrency(100, "GBP", "EUR"));
+  `,
+  difficulty : 'medium'
   }
 ];
