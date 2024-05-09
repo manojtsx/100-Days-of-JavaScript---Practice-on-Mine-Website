@@ -875,7 +875,7 @@ export const challenges: Challenge[] = [
   },
   {
     id : 40,
-    title : "Create Bar Chart",
+    title : "Day 40 : Create Bar Chart",
     description : `Challenge : Simple Bar Chart Using Array Data
     ===========================================================
     Write a function generateBarChart that takes an array of  numbers and generates a text-based bar chart.
@@ -894,7 +894,7 @@ export const challenges: Challenge[] = [
   },
   {
     id : 41,
-    title : 'Simple Currency Converter',
+    title : 'Day 41 : Simple Currency Converter',
     description : `Challenge : Simple Currency Converter
     ===========================================================
     Write a function convertCurrency to convert from one currency to another using static exchange rates.
