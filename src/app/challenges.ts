@@ -972,5 +972,21 @@ export const challenges: Challenge[] = [
     fizzBuzz(1,15);
     `,
     difficulty : "medium"
+  },
+  {
+    id : 44,
+    title : 'Day 44 : Email Validation Using Regex',
+    description : `Challenge : Email Validation Using Regex
+    ===========================================================
+    Write a function validateEmail to validate the email passed as a parameter to the function
+    It will return true if the email is valid and false if invalid.`,
+    placeholder : `function validateemail(email){
+      const exp = /^[A-Za-z0-9._%+-]+@[a-zA-Z0-9]+\.[a-zA-Z\.]{2,}$/
+      // Your code here
+    }
+    validateEmail("user@test.com");
+    validateEmailI("user@gmaul$.com");
+    `,
+    difficulty : "easy"
   }
 ];
