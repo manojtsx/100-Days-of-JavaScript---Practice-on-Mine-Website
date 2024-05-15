@@ -1063,5 +1063,31 @@ export const challenges: Challenge[] = [
    }
    extractNumbers("abc123def456")`,
     difficulty : 'medium'
+  },
+  {
+    id : 48,
+    title : 'Day 48 : Validate Hex Color Code',
+    description : `Programming Challenge: Validate Hex-Color-Code
+    ===========================================================
+    Write a regular expression to validate a hex color code (e.g., #a3c113).
+    ===========================================================
+    Requirements
+    1. The hex color code should start with "#".
+    2. It should be followed by either 3 or 6 hexadecimal characters.
+    ===========================================================
+    Use Cases
+    1. Validating color codes in design tools.
+    2. Ensuring consistent color code format in CSS.
+    3. Filtering valid hex color codes in data processing.
+    ===========================================================
+    Test Cases
+    console.log(validateHexColor("#a3c113")); // Expected output: true
+    console.log(validateHexColor("#fff")): // Exnected output: true`,
+    placeholder : `
+    function validateHexColor(color){
+      //Your code here
+    }
+    validateHexColor("#a3c113")`,
+    difficulty : 'medium'
   }
 ];
